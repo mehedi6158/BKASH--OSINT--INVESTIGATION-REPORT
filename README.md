@@ -57,10 +57,10 @@ This assessment focuses on the publicly accessible digital footprint of **bKash 
   - SPF
   - DKIM
   - DMARC
-- SSL/TLS Certificate Analysis
+- IP Address & ASN Analysis
 - HTTP Security Headers Assessment
 - Web Technology Stack Identification
-- IP Address & ASN Analysis
+- SSL/TLS Certificate Analysis
 - Hosting Infrastructure Review
 - CDN & Web Application Firewall (WAF) Identification
 - Email Security Assessment
@@ -233,3 +233,69 @@ The DNS analysis confirms that the domain is properly configured with IPv4 (A) a
 ### Analysis
 
 The DNS configuration indicates a mature and professionally managed infrastructure. Cloudflare provides DNS and network protection, while email authentication mechanisms (SPF, DKIM, and DMARC) are correctly implemented to reduce email spoofing risks. The presence of multiple verification records suggests integration with several enterprise cloud services and security platforms. No significant DNS configuration anomalies were identified from the publicly available records.
+
+# IP Information
+
+This section analyzes the public IP addresses associated with the target domain, including network ownership, routing information, hosting infrastructure, and IP characteristice etc
+
+---
+
+## IPv4 Information
+
+| Field | Value |
+|--------|-------|
+| IPv4 Address 1 | 104.18.13.30 |
+| IPv4 Address 2 | 104.18.12.30 |
+| Status | Active |
+
+---
+
+## IPv6 Information
+
+| Field | Value |
+|--------|-------|
+| IPv6 Address 1 | 2606:4700::6812:c1e |
+| IPv6 Address 2 | 2606:4700::6812:d1e |
+| Status | Active |
+
+---
+
+## Autonomous System (ASN)
+
+| Field | Value |
+|--------|-------|
+| ASN | AS13335 *(Cloudflare)* |
+| Organization | Cloudflare, Inc. |
+
+---
+## Network Information
+
+| Field | Value |
+|--------|-------|
+| Public IP | 104.18.13.30 |
+| Origin AS | AS13335 |
+| Network Owner | Cloudflare, Inc. |
+| BGP Prefix | 104.18.0.0/20 |
+---
+
+## Reverse DNS (PTR)
+
+
+---
+
+## Geolocation
+
+
+----
+
+## Hosting Provider
+
+ |
+
+---
+
+## Observation
+
+---
+
+## Analysis
