@@ -194,3 +194,42 @@ The RDAP records confirm that the domain is actively registered through an ICANN
 
 ## Analysis
 The RDAP records confirm that the domain is actively registered through an ICANN-accredited registrar. The domain has remained active since 2010, uses Cloudflare authoritative name servers, and DNSSEC is enabled.
+
+## DNS Records
+
+| Record Type | Value | Status |
+|--------------|-----------------------------------------------|---------|
+| A1 | 104.18.13.30 | Present |
+| A2 | 104.18.12.30 | Present |
+| AAAA1 | 2606:4700::6812:c1e | Present |
+| AAAA2 | 2606:4700::6812:d1e | Present |
+| MX | inbound-smtp.us-east-1.amazonaws.com (Priority: 10) | Present |
+| NS1 | adi.ns.cloudflare.com | Present |
+| NS2 | hal.ns.cloudflare.com | Present |
+| SOA | Primary NS: adi.ns.cloudflare.com (dns.cloudflare.com) | Present |
+| TXT | 27 TXT Records Detected | Present |
+
+
+## TXT Record Summary
+
+| Record Type | Status | Notes |
+|--------------|---------|---------------------------------------------|
+| SPF | Present | Email sender policy configured |
+| DKIM | Present | RSA public keys published |
+| DMARC | Present | Domain email authentication policy configured |
+| Google Site Verification | Present | Multiple verification records detected |
+| Microsoft Verification | Present | Microsoft service verification |
+| GlobalSign Verification | Present | Certificate/Domain validation records |
+| Atlassian Verification | Present | Atlassian service verification |
+| Cisco Verification | Present | Cisco service verification |
+| Postman Verification | Present | API platform verification |
+| Other TXT Records | Present | Additional verification and service records detected |
+
+
+### Ovservation
+
+The DNS analysis confirms that the domain is properly configured with IPv4 (A) and IPv6 (AAAA) records. Cloudflare is used as the authoritative DNS provider, while Amazon Web Services (AWS) is configured as the email handling platform through MX records. A total of 27 TXT records were identified, including SPF, DKIM, DMARC, BIMI, and multiple domain verification records for Google, Microsoft, GlobalSign, Atlassian, Cisco, and Postman.
+
+### Analysis
+
+The DNS configuration indicates a mature and professionally managed infrastructure. Cloudflare provides DNS and network protection, while email authentication mechanisms (SPF, DKIM, and DMARC) are correctly implemented to reduce email spoofing risks. The presence of multiple verification records suggests integration with several enterprise cloud services and security platforms. No significant DNS configuration anomalies were identified from the publicly available records.
