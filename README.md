@@ -280,22 +280,86 @@ This section analyzes the public IP addresses associated with the target domain,
 
 ## Reverse DNS (PTR)
 
+*** Can't find 104.18.13.30 in-addr.arpa: Non-existent domain
 
 ---
 
 ## Geolocation
-
-
+- Geo Location : Global (Cloudflare Anycast)
+- Hosting Provider : Cloudflare, Inc.
+- Origin Server Location : Unknown (Protected by Cloudflare)
 ----
 
 ## Hosting Provider
-
- |
+- Hosting Provider : Cloudflare, Inc.
+- ASN              : AS13335
+- IP Address       : 104.18.13.30
 
 ---
 
 ## Observation
-
+The target IP address belongs to Cloudflare, Inc. (AS13335) and is routed through Cloudflare's global Anycast network. No public PTR record was identified.
 ---
 
 ## Analysis
+The website is protected by Cloudflare's reverse proxy service. Therefore, the visible IP does not reveal the origin hosting provider or the actual server location, limiting direct infrastructure attribution.
+
+
+## SSL/TLS Analysis
+
+### Certificate Details
+
+| Field | Value |
+|:-----------------------------|:--------------------------------|
+| Certificate Status | |
+| Common Name (CN) | |
+| Subject Alternative Names (SAN) | |
+| Issuer | |
+| Signature Algorithm | |
+| Public Key Algorithm | |
+| Public Key Size | |
+| Serial Number | |
+| Valid From | |
+| Expiry Date | |
+| Days Remaining | |
+
+---
+
+### 10.2 TLS Versions
+
+| Protocol | Status |
+|:---------|:-------|
+| TLS 1.0 | |
+| TLS 1.1 | |
+| TLS 1.2 | |
+| TLS 1.3 | |
+
+---
+
+### 10.3 Cipher Suites
+
+| Field | Value |
+|:--------------------------|:-------------------------------|
+| Preferred Cipher Suite | |
+| Supported Cipher Suites | |
+| Weak Cipher Detected | Yes / No |
+
+---
+
+### 10.4 SSL/TLS Security Features
+
+| Feature | Status |
+|:----------------------------|:----------------|
+| HSTS | Enabled / Disabled |
+| OCSP Stapling | Enabled / Disabled |
+| Forward Secrecy | Supported / Not Supported |
+| Session Resumption | Supported / Not Supported |
+| Certificate Transparency | Enabled / Disabled |
+
+---
+
+### Observation
+
+---
+
+### Analysis
