@@ -354,4 +354,56 @@ The target website uses a valid and trusted SSL/TLS certificate, supports modern
 ### Analysis
 Overall, the SSL/TLS configuration is strong and aligns with current security best practices. The deployment of modern protocols, robust encryption algorithms, and secure TLS features reduces the risk of interception and protocol-based attacks while ensuring confidential and authenticated communication.
 
-# HTTP Security Analysis
+# HTTP Security Analysis 
+
+## HTTP Response Headers
+
+| Header | Value |
+|:--------------------------------|:--------------------------------|
+| HTTP Version |HTTP/1.1 |
+| HTTP Status Code |403 Forbidden |
+| Server |cloudflare |
+| Date |Thu, 30 Jul 2026 |
+| Content-Type |text/html; charset=UTF-8 |
+| Content-Length |Not Present |
+| Cache-Control |private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-                        check=0 |
+| ETag |Not Present |
+| Last-Modified | |
+| Location (If Redirect) | |
+
+## HTTP Security Headers
+
+| Security Header | Status |
+|:--------------------------------------------|:----------------|
+| Strict-Transport-Security (HSTS) | |
+| Content-Security-Policy (CSP) | |
+| X-Frame-Options | |
+| X-Content-Type-Options | |
+| Referrer-Policy | |
+| Permissions-Policy | |
+| Cross-Origin-Resource-Policy (CORP) | |
+| Cross-Origin-Opener-Policy (COOP) | |
+| Cross-Origin-Embedder-Policy (COEP) | |
+
+## HTTP Methods
+
+| HTTP Method | Status |
+|:----------------|:----------------|
+| GET | |
+| POST | |
+| HEAD | |
+| OPTIONS | |
+| PUT | |
+| DELETE | |
+| TRACE | |
+| CONNECT | |
+
+ 
+ ## HTTP Redirection
+
+| Item | Value |
+|:--------------------------------|:--------------------------------|
+| HTTP → HTTPS Redirect | |
+| Redirect Status Code | |
+| Redirect Target | |
+| HSTS Enabled | |
