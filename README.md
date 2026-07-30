@@ -354,7 +354,7 @@ The target website uses a valid and trusted SSL/TLS certificate, supports modern
 ### Analysis
 Overall, the SSL/TLS configuration is strong and aligns with current security best practices. The deployment of modern protocols, robust encryption algorithms, and secure TLS features reduces the risk of interception and protocol-based attacks while ensuring confidential and authenticated communication.
 
-# HTTP Security Analysis 
+# HTTP/HTTPPS Security Analysis 
 
 ## HTTP Response Headers
 
@@ -375,35 +375,51 @@ Overall, the SSL/TLS configuration is strong and aligns with current security be
 
 | Security Header | Status |
 |:--------------------------------------------|:----------------|
-| Strict-Transport-Security (HSTS) | |
-| Content-Security-Policy (CSP) | |
-| X-Frame-Options | |
-| X-Content-Type-Options | |
-| Referrer-Policy | |
-| Permissions-Policy | |
-| Cross-Origin-Resource-Policy (CORP) | |
-| Cross-Origin-Opener-Policy (COOP) | |
-| Cross-Origin-Embedder-Policy (COEP) | |
+| Strict-Transport-Security (HSTS) |Missing |
+| Content-Security-Policy (CSP) |Present (Configuration Warning) |
+| X-Frame-Options |Present |
+| X-Content-Type-Options |Present (nosniff) |
+| Referrer-Policy |Present (same-origin) |
+| Permissions-Policy | Not Observed |
+| Cross-Origin-Resource-Policy (CORP) |Present |
+| Cross-Origin-Opener-Policy (COOP) | Not Observed |
+| Cross-Origin-Embedder-Policy (COEP) | Not Observed |
 
 ## HTTP Methods
 
 | HTTP Method | Status |
 |:----------------|:----------------|
-| GET | |
-| POST | |
-| HEAD | |
-| OPTIONS | |
-| PUT | |
-| DELETE | |
-| TRACE | |
-| CONNECT | |
+| GET |Could Not Be Determined |
+| POST | Could Not Be Determined|
+| HEAD |Could Not Be Determined |
+| OPTIONS |Could Not Be Determined |
+| PUT |Could Not Be Determined |
+| DELETE |Could Not Be Determined |
+| TRACE |Could Not Be Determined |
+| CONNECT |Could Not Be Determined |
 
+*** Scan Result
+
+- Host--	www.bkash.com
+- Port--	443/tcp
+- State--	Open
+- Service--	SSL/HTTP
+- HTTP Server--	Cloudflare HTTP Proxy
  
  ## HTTP Redirection
 
 | Item | Value |
 |:--------------------------------|:--------------------------------|
-| HTTP → HTTPS Redirect | |
-| Redirect Status Code | |
-| Redirect Target | |
-| HSTS Enabled | |
+| HTTP → HTTPS Redirect |Could Not Be Verified |
+| Redirect Status Code |301 Moved Permanently |
+| Redirect Target |https://www.bkash.com/ |
+| HSTS Enabled |Present (Strict-Transport-Security: max-age=31536000) |
+
+
+### Observation
+
+The website implements multiple HTTP security mechanisms, including Cloudflare protection, HSTS, X-Frame-Options, Referrer-Policy, and X-Content-Type-Options. Automated requests return HTTP 403 Forbidden, indicating active security controls.
+
+### Analysis
+
+The observed security headers and Cloudflare protection indicate a well-secured web infrastructure. Automated reconnaissance is restricted, reducing information exposure and improving resistance against common web-based attacks.
