@@ -110,17 +110,8 @@ This assessment was conducted using passive Open-Source Intelligence (OSINT) tec
 # Technical Assessment
 
 The following sections present the technical findings collected during the passive Open-Source Intelligence (OSINT) assessment of **bKash Limited**. The analysis is based exclusively on publicly available information and focuses on the organization's externally observable digital infrastructure and security posture.
-
 ---
-
 ## Domain Intelligence
-
-### Domain Details
-
-
-
-## 6. Domain Intelligence
-
 ### Domain Details
 
 | Field | Value |
@@ -311,55 +302,54 @@ The website is protected by Cloudflare's reverse proxy service. Therefore, the v
 
 | Field | Value |
 |:-----------------------------|:--------------------------------|
-| Certificate Status | |
-| Common Name (CN) | |
-| Subject Alternative Names (SAN) | |
-| Issuer | |
-| Signature Algorithm | |
-| Public Key Algorithm | |
-| Public Key Size | |
-| Serial Number | |
-| Valid From | |
-| Expiry Date | |
-| Days Remaining | |
+| Certificate Status |Valid (Trusted) |
+| Common Name (CN) |	www.bkash.com|
+| Subject Alternative Names (SAN) | www.bkash.com, bkash.com|
+| Issuer |GlobalSign Extended Validation CA - SHA256 - G3 |
+| Signature Algorithm |	SHA256withRSA |
+| Public Key Algorithm |RSA|
+| Public Key Size |2048 bits |
+| Serial Number |7ff427e6a7ae764a68569bdf |
+| Valid From |	Wed, 23 Jul 2025 |
+| Expiry Date |	Mon, 24 Aug 2026 |
+
 
 ---
 
-### 10.2 TLS Versions
+### TLS Versions
 
 | Protocol | Status |
 |:---------|:-------|
-| TLS 1.0 | |
-| TLS 1.1 | |
-| TLS 1.2 | |
-| TLS 1.3 | |
+| TLS 1.0 |Not Supported |
+| TLS 1.1 |Not Supported |
+| TLS 1.2 |Supported |
+| TLS 1.3 |Supported |
 
 ---
 
-### 10.3 Cipher Suites
+### Cipher Suites
 
-| Field | Value |
-|:--------------------------|:-------------------------------|
-| Preferred Cipher Suite | |
-| Supported Cipher Suites | |
-| Weak Cipher Detected | Yes / No |
+| TLS Version | Cipher Suite | Encryption | Forward Secrecy |
+|:------------|:------------------------------------------------|:---------------------|:-----------------|
+| TLS 1.3 | TLS_AES_128_GCM_SHA256 | AES-128 GCM | Yes |
+| TLS 1.3 | TLS_AES_256_GCM_SHA384 | AES-256 GCM | Yes |
+| TLS 1.3 | TLS_CHACHA20_POLY1305_SHA256 | ChaCha20-Poly1305 | Yes |
+| TLS 1.2 | TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 | AES-128 GCM | Yes |
+| TLS 1.2 | TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 | ChaCha20-Poly1305 | Yes |
+| TLS 1.2 | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 | AES-256 GCM | Yes |
 
----
-
-### 10.4 SSL/TLS Security Features
+### SSL/TLS Security Features
 
 | Feature | Status |
 |:----------------------------|:----------------|
 | HSTS | Enabled / Disabled |
-| OCSP Stapling | Enabled / Disabled |
-| Forward Secrecy | Supported / Not Supported |
-| Session Resumption | Supported / Not Supported |
-| Certificate Transparency | Enabled / Disabled |
-
+| OCSP Stapling | Enabled  |
+| Forward Secrecy | Supported |
+| Session Resumption | Supported |
+| Certificate Transparency | Enabled |
 ---
-
 ### Observation
-
+The target website uses a valid and trusted SSL/TLS certificate, supports modern TLS versions (TLS 1.2 and TLS 1.3), implements secure cipher suites, and enables multiple security features, including Forward Secrecy, OCSP Stapling, and Certificate Transparency.
 ---
-
 ### Analysis
+Overall, the SSL/TLS configuration is strong and aligns with current security best practices. The deployment of modern protocols, robust encryption algorithms, and secure TLS features reduces the risk of interception and protocol-based attacks while ensuring confidential and authenticated communication.
