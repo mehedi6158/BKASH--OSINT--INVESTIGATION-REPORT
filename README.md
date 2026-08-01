@@ -423,3 +423,63 @@ The website implements multiple HTTP security mechanisms, including Cloudflare p
 ### Analysis
 
 The observed security headers and Cloudflare protection indicate a well-secured web infrastructure. Automated reconnaissance is restricted, reducing information exposure and improving resistance against common web-based attacks.
+
+# Web Technology Stack Identification
+
+## Technology Overview
+| **Category**                    | **Technology** |
+| ------------------------------- | -------------- |
+| Front-end Framework             |  React              |
+| Back-end Framework              |  Not Detected              |
+| JavaScript Libraries            | jQuery 3.7.0, Bootstrap.js, Socket.IO, lodash, Moment.js,                                                 Slick JS, core-js             |
+| CSS Framework                   | Bootstrap.js               |
+| Browser APIs                    | HTML5 History API, Intersection Observer               |
+| Real-time Communication         |Socket.IO                |
+| Content Management System (CMS) | Atlassian Cloud               |
+| Developer Tools                 | Postman               |
+## Analytics & Tracking Technologies
+| **Category**             | **Technology** |
+| ------------------------ | -------------- |
+| Web Analytics            | Google Analytics 4 (GA4), Microsoft Clarity               |
+| Marketing Analytics      | Facebook Domain Insights             |                
+| Conversion Tracking      |Facebook Pixel, Google Conversion Linker, Google AdWords Conversion,                                TikTok Conversion Tracking Pixel                |
+| Tag Management           |  Google Tag Manager (GTM), Global Site Tag (gtag.js)              |
+| Advertising Technologies | DoubleClick.net, Facebook Custom Audiences, Google Remarketing,                      TikTok Pixel               |
+
+## Third-Party Integrations
+| **Category**        | **Technology** |
+| ------------------- | -------------- |
+| Social Integration  | Facebook SDK, Facebook for Websites, TikTok Embed               |
+| Media Integration   | TikTok Embed, YouTube Link               |
+| API Integration     | Google Font API, Socket.IO               |
+| Payment Integration |Not Detected                |
+| Mapping Services    | Not Detected               |
+| Customer Support    |Not Detected                |
+
+## Security Technologies
+| Category            | Technology      |
+| ------------------------ | -------------------- |
+| Transport Security  | HSTS, SSL by Default |
+| SSL/TLS Certificate  | GlobalSign EV        |
+| Email Authentication | SPF, DMARC           |
+| Email Security      | PowerDMARC           |
+
+## Infrastructure Technologies
+| Category                       | Technology                                              |
+| ---------------------------------- | ----------------------------------------------------------- |
+| Web Hosting                    | Cloudflare Hosting, Oracle Cloud                            |
+| Content Delivery Network (CDN) | Cloudflare CDN, Cloudflare, CDNJS, jsDelivr, GStatic, UNPKG |
+| DNS Provider                  | Cloudflare DNS                                              |
+| DNS Security                  | DNSSEC                                                      |
+| IP Support                    | IPv6                                                        |
+
+
+### Observation
+React is used as the front-end framework.
+Cloudflare provides DNS, CDN, hosting, and security services.
+Google Analytics 4, Microsoft Clarity, and Google Tag Manager are used for analytics.
+Facebook Pixel and Google Ads Conversion Tracking are used for marketing and conversion tracking.
+HSTS, GlobalSign EV, SPF, DMARC, and DNSSEC are implemented to enhance security.
+
+### Analysis
+The detected technologies indicate a modern, secure, and performance-oriented web architecture. The website combines Cloudflare infrastructure, React, analytics platforms, and standard security mechanisms to support availability, user analytics, and secure communications
